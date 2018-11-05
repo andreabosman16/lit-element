@@ -427,15 +427,15 @@ export abstract class UpdatingElement extends HTMLElement {
         // stack at time of calling. However, since we process attributes
         // in `update` this should not be possible (or an extreme corner case
         // that we'd like to discover).
-        // mark state reflecting
-        this._updateState = this._updateState | STATE_IS_REFLECTING;
+//         // mark state reflecting
+//         this._updateState = this._updateState | STATE_IS_REFLECTING;
         if (attrValue === null) {
           this.removeAttribute(attr);
         } else {
           this.setAttribute(attr, attrValue);
         }
         // mark state not reflecting
-        this._updateState = this._updateState & ~STATE_IS_REFLECTING;
+//         this._updateState = this._updateState & ~STATE_IS_REFLECTING;
       }
     }
   }
